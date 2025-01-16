@@ -149,6 +149,7 @@ void Player::init()
         m_pDBus = new QDBusInterface("org.freedesktop.login1", "/org/freedesktop/login1",
                                      "org.freedesktop.login1.Manager", QDBusConnection::systemBus());
         connect(m_pDBus, SIGNAL(PrepareForSleep(bool)), this, SLOT(onSleepWhenTaking(bool)));
+        connect(m_pDBus, SIGNAL(PrepareForShutdown(bool)), this, SLOT(onSleepWhenTaking(bool)));
     }
 
     QDBusConnection::sessionBus().connect("com.deepin.SessionManager", "/com/deepin/SessionManager",
