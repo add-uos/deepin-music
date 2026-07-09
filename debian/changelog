@@ -1,3 +1,30 @@
+deepin-music (7.0.60) unstable; urgency=medium
+
+  * chore: Update version to 7.0.60
+  * fix(datamanager): normalize album/artist hash throughout importMetas (#704)
+  * fix: import music from default music dir on empty state click
+  * perf(db): index album/artist name for O(1) lookup in import (#702)
+  * fix: index meta hash for O(1) lookup during import
+  * fix: extract cover/lyrics after import loop for instant list
+  * fix: skip full rewrite on exit when in-memory model unchanged
+  * fix: batch playlist meta insert to avoid per-row SELECT
+  * fix(test): use bare include names in test_audiodatadetector
+  * fix: persist only newly imported metas instead of full rewrite
+  * fix(player): play current track on dbus play after restart
+  * chore: Sync by https://github.com/linuxdeepin/.github/commit/88706fa723e3771211cb0781d3d97fd4a6cd2a68
+  * test: raise libdmusic coverage to 80% and fix cross-run DB isolation
+  * test: expand PlayerEngine and DataManager tests to exceed 70% coverage
+  * test: expand AudioAnalysis and Presenter tests to reach 66% coverage
+  * test: expand libdmusic unit tests and raise coverage to 55%
+  * [skip CI] i18n: Translate deepin-music_en_US.ts in es
+  * [skip CI] i18n: Translate deepin-music_en_US.ts in es
+  * [skip CI] i18n: Translate deepin-music_en_US.ts in es
+  * test: expand libdmusic unit tests and raise coverage to 34.9%
+  * test: add libdmusic unit test cases and fix coverage collection
+  * test: migrate libdmusic-test from Qt5 to Qt6 and enable coverage
+
+ -- zhanghongyuan <zhanghongyuan@uniontech.com>  Thu, 09 Jul 2026 13:11:54 +0800
+
 deepin-music (7.0.59) unstable; urgency=medium
 
   * fix: Unresponsive click on tray panel applications

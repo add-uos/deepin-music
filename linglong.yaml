@@ -7,14 +7,14 @@ version: "1"
 package:
   id: org.deepin.music
   name: "deepin-music"
-  version: 7.0.59.1
+  version: 7.0.60.1
   kind: app
   description: |
     music for deepin os.
 
 base: org.deepin.base/25.2.2
 # 解决 "Failed to initialize graphics backend for OpenGL."
-runtime: org.deepin.runtime.webengine/25.2.2
+runtime: org.deepin.runtime.webengine/6.7.0
 
 command:
   - deepin-music
