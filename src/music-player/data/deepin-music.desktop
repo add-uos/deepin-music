@@ -11,6 +11,7 @@ Type=Application
 X-Deepin-ManualID=deepin-music
 X-Deepin-TurboType=dtkwidget
 X-Deepin-Vendor=deepin
+X-Deepin-Singleton=true
 
 # Translations:
 # Do not manually modify!
