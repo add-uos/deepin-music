@@ -119,7 +119,6 @@ int main(int argc, char *argv[])
     if (qEnvironmentVariableIsEmpty("XDG_CURRENT_DESKTOP")) {
         qputenv("XDG_CURRENT_DESKTOP", "Deepin");
     }
-    qputenv("D_POPUP_MODE", "embed");
 #ifdef Q_OS_WIN
     qputenv("D_DTK_DISABLE_INWINDOWBLUR", "1");
     typedef HRESULT (WINAPI *SetCurrentProcessExplicitAppUserModelIDProc)(PCWSTR);
